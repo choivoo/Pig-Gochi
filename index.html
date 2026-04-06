@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>트램펄린 카운터</title>
+    <style>
+        /* 워치 화면 최적화 스타일 */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* 배터리 절약을 위한 블랙 */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Inter', sans-serif;
+            overflow: hidden;
+            touch-action: manipulation;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* 현재 카운트 숫자 */
+        #count {
+            font-size: 100px;
+            font-weight: 800;
+            color: #00ffcc; /* 형광 민트색 */
+            line-height: 1;
+            transition: transform 0.1s ease;
+        }
+
+        /* 하단 안내 문구 */
+        #status {
+            font-size: 16px;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        /* 목표 달성 시 연출 */
+        .finished #count {
+            color: #ffcc00;
+            animation: bounce 0.5s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        #reset-btn {
+            position: absolute;
+            bottom: 20px;
+            background: none;
+            border: 1px solid #444;
+            color: #666;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body onclick="handleTap()">
+    <div id="count">0</div>
+    <div id="status">터치해서 시작!</div>
+    <button id="reset-btn" onclick="resetCount(event)">리셋</button>
+
+    <script>
+        let count = 0;
+        const maxCount = 200;
+        const countEl = document.getElementById('count');
+        const statusEl = document.getElementById('status');
+        
+        // 오디오 설정 (비프음)
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+        function playBeep() {
+            const oscillator = audioCtx.createOscillator();
+            const gainNode = audioCtx.createGain();
+
+            oscillator.type = 'sine'; // 부드러운 삐익 소리
+            oscillator.frequency.setValueAtTime(1000, audioCtx.currentTime); // 고음 1000Hz
+            
+            gainNode.gain.setValueAtTime(0.2, audioCtx.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.1);
+
+            oscillator.connect(gainNode);
+            gainNode.connect(audioCtx.destination);
+
+            oscillator.start();
+            oscillator.stop(audioCtx.currentTime + 0.1);
+        }
+
+        function handleTap() {
+            if (count < maxCount) {
+                count++;
+                countEl.innerText = count;
+                statusEl.innerText = "점프 중...";
+                playBeep();
+
+                // 숫자 커지는 효과
+                countEl.style.transform = "scale(1.2)";
+                setTimeout(() => { countEl.style.transform = "scale(1)"; }, 100);
+
+                if (count === maxCount) {
+                    document.body.classList.add('finished');
+                    statusEl.innerText = "목표 달성! 대단해요!";
+                    statusEl.style.color = "#ffcc00";
+                }
+            }
+        }
+
+        function resetCount(event) {
+            event.stopPropagation(); // 배경 클릭 이벤트 방지
+            count = 0;
+            countEl.innerText = count;
+            statusEl.innerText = "터치해서 시작!";
+            statusEl.style.color = "#888";
+            document.body.classList.remove('finished');
+        }
+    </script>
+</body>
+</html>
