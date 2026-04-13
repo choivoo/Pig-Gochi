@@ -3,154 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>트램펄린 파워 카운터</title>
+    <title>저장되는 다마고치</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            font-family: -apple-system, sans-serif;
-            overflow: hidden;
-            touch-action: manipulation;
-            user-select: none;
-            -webkit-tap-highlight-color: transparent;
-            transition: background-color 0.2s;
+            margin: 0; background-color: #111; color: #fff;
+            display: flex; flex-direction: column; justify-content: center;
+            align-items: center; height: 100vh; font-family: sans-serif;
+            overflow: hidden; touch-action: manipulation;
         }
 
-        /* 메인 카운트 숫자 */
-        #count {
-            font-size: 120px;
-            font-weight: 900;
-            color: #00FF41; /* 매트릭스 그린 */
-            text-shadow: 0 0 20px rgba(0, 255, 65, 0.5);
-            margin: 0;
-            transition: transform 0.05s;
+        #game-container {
+            text-align: center; width: 100%; max-width: 300px;
         }
 
-        /* 상태 메시지 */
-        #status {
-            font-size: 18px;
-            font-weight: bold;
-            color: #aaa;
-            margin-top: -10px;
+        /* 캐릭터 박스 */
+        #pet {
+            font-size: 80px; margin: 20px 0;
+            transition: transform 0.1s; display: inline-block;
         }
 
-        /* 목표 달성 시 연출 */
-        .finished {
-            background-color: #ff0000 !important;
+        /* 상태바 스타일 */
+        .stat-row { margin: 5px 0; font-size: 12px; }
+        .bar-bg {
+            width: 80%; height: 10px; background: #333;
+            border-radius: 5px; margin: 2px auto; overflow: hidden;
         }
-        .finished #count {
-            color: #ffffff;
-            text-shadow: 0 0 30px #000;
-            animation: shake 0.1s infinite;
-        }
-
-        @keyframes shake {
-            0% { transform: translate(2px, 2px); }
-            50% { transform: translate(-2px, -2px); }
-            100% { transform: translate(2px, -2px); }
+        .bar-fill {
+            height: 100%; width: 50%; transition: width 0.3s, background-color 0.3s;
         }
 
-        /* 리셋 버튼 */
-        #reset-btn {
-            position: absolute;
-            bottom: 15px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid #333;
-            color: #666;
-            padding: 8px 20px;
-            border-radius: 30px;
-            font-size: 14px;
-            z-index: 10;
+        /* 버튼 그룹 */
+        .btn-group {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 10px;
+            padding: 10px; margin-top: 10px;
         }
+        button {
+            padding: 10px; border: none; border-radius: 10px;
+            background: #444; color: white; font-weight: bold;
+            font-size: 14px; cursor: pointer;
+        }
+        button:active { background: #666; transform: scale(0.95); }
+
+        #msg { height: 20px; color: #ffcc00; font-weight: bold; margin-bottom: 10px; }
     </style>
 </head>
-<body onclick="handleTap()">
-    <div id="count">0</div>
-    <div id="status">READY?</div>
-    <button id="reset-btn" onclick="resetCount(event)">RESET</button>
+<body>
 
-    <script>
-        let count = 0;
-        const maxCount = 200;
-        const countEl = document.getElementById('count');
-        const statusEl = document.getElementById('status');
+<div id="game-container">
+    <div id="msg">어서와!</div>
+    <div id="lv-text">LV.1 아기 포켓몬</div>
+    
+    <div id="pet">🐣</div>
+
+    <div class="stat-row">
+        밥 (허기)
+        <div class="bar-bg"><div id="hunger-bar" class="bar-fill" style="background: #ff4757;"></div></div>
+    </div>
+    <div class="stat-row">
+        에너지 (성장)
+        <div class="bar-bg"><div id="exp-bar" class="bar-fill" style="background: #2ed573;"></div></div>
+    </div>
+
+    <div class="btn-group">
+        <button onclick="feed()">밥주기 🍖</button>
+        <button onclick="play()">훈련하기 ⚡</button>
+        <button onclick="clean()">씻기기 🧼</button>
+        <button onclick="resetGame()" style="background: #222; color: #555;">리셋</button>
+    </div>
+</div>
+
+<script>
+    // --- 게임 데이터 설정 ---
+    let data = {
+        lv: 1,
+        exp: 0,
+        hunger: 50,
+        lastDate: Date.now()
+    };
+
+    const petIcons = ["🐣", "🐥", "🐤", "🐓", "🔥", "🐉"];
+    const petNames = ["아기새", "꼬마새", "성장기", "싸움닭", "불사조", "신룡"];
+
+    // --- 저장 및 불러오기 ---
+    function save() {
+        localStorage.setItem('myWatchPet', JSON.stringify(data));
+    }
+
+    function load() {
+        const saved = localStorage.getItem('myWatchPet');
+        if (saved) {
+            data = JSON.parse(saved);
+            updateUI();
+        }
+    }
+
+    // --- 효과음 (강렬한 버전) ---
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    function beep(f, t) {
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const g = audioCtx.createGain();
+        osc.type = 'square';
+        osc.frequency.value = f;
+        g.gain.setValueAtTime(0.1, audioCtx.currentTime);
+        g.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + t);
+        osc.connect(g); g.connect(audioCtx.destination);
+        osc.start(); osc.stop(audioCtx.currentTime + t);
+    }
+
+    // --- 게임 로직 ---
+    function updateUI() {
+        const stage = Math.min(data.lv - 1, petIcons.length - 1);
+        document.getElementById('pet').innerText = petIcons[stage];
+        document.getElementById('lv-text').innerText = `LV.${data.lv} ${petNames[stage]}`;
+        document.getElementById('hunger-bar').style.width = data.hunger + "%";
+        document.getElementById('exp-bar').style.width = data.exp + "%";
+        save();
+    }
+
+    function showMsg(txt) {
+        document.getElementById('msg').innerText = txt;
+        setTimeout(() => document.getElementById('msg').innerText = "", 1500);
+    }
+
+    function feed() {
+        if (data.hunger >= 100) return showMsg("배불러요!");
+        data.hunger = Math.min(data.hunger + 20, 100);
+        beep(800, 0.2);
+        showMsg("우걱우걱 🍖");
+        updateUI();
+    }
+
+    function play() {
+        if (data.hunger <= 10) return showMsg("배고파서 못해요..");
+        data.hunger -= 15;
+        data.exp += 25;
+        beep(1200, 0.1);
         
-        // 오디오 컨텍스트 설정
-        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        // 애니메이션
+        const p = document.getElementById('pet');
+        p.style.transform = "scale(1.3) rotate(10deg)";
+        setTimeout(() => p.style.transform = "scale(1)", 100);
 
-        // 강렬한 삐이익! 소리 함수
-        function playAggressiveBeep() {
-            if (audioCtx.state === 'suspended') {
-                audioCtx.resume();
-            }
-
-            const osc = audioCtx.createOscillator();
-            const gain = audioCtx.createGain();
-
-            // 사각파(Square)를 사용하여 찢어지는 듯한 강한 소리 생성
-            osc.type = 'square';
-            // 1500Hz의 아주 높은 고음
-            osc.frequency.setValueAtTime(1500, audioCtx.currentTime);
-            // 소리가 약간 길게 "삐이이익" 하도록 설정
-            osc.frequency.exponentialRampToValueAtTime(1200, audioCtx.currentTime + 0.3);
-
-            gain.gain.setValueAtTime(0.5, audioCtx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);
-
-            osc.connect(gain);
-            gain.connect(audioCtx.destination);
-
-            osc.start();
-            osc.stop(audioCtx.currentTime + 0.3);
+        if (data.exp >= 100) {
+            data.exp = 0;
+            data.lv++;
+            beep(1500, 0.5);
+            if (navigator.vibrate) navigator.vibrate([100, 50, 100]);
+            showMsg("진화했다!!! ✨");
         }
+        updateUI();
+    }
 
-        function handleTap() {
-            if (count < maxCount) {
-                count++;
-                countEl.innerText = count;
-                
-                // 1. 소리 재생
-                playAggressiveBeep();
+    function clean() {
+        beep(2000, 0.05);
+        showMsg("깨끗해졌어요 🧼");
+        if (navigator.vibrate) navigator.vibrate(50);
+    }
 
-                // 2. 진동 (워치 하드웨어 지원 시)
-                if (navigator.vibrate) {
-                    navigator.vibrate(100); 
-                }
-
-                // 3. 시각 효과
-                countEl.style.transform = "scale(1.4)";
-                setTimeout(() => { countEl.style.transform = "scale(1)"; }, 50);
-                
-                statusEl.innerText = "KEEP GOING!";
-                statusEl.style.color = "#00FF41";
-
-                // 목표 달성 체크
-                if (count === maxCount) {
-                    document.body.classList.add('finished');
-                    statusEl.innerText = "MISSION COMPLETE!";
-                    statusEl.style.color = "#fff";
-                    // 목표 달성 시엔 더 긴 진동
-                    if (navigator.vibrate) navigator.vibrate([200, 100, 200]);
-                }
-            }
+    function resetGame() {
+        if(confirm("정말 초기화할까요?")) {
+            localStorage.removeItem('myWatchPet');
+            location.reload();
         }
+    }
 
-        function resetCount(event) {
-            event.stopPropagation();
-            count = 0;
-            countEl.innerText = count;
-            statusEl.innerText = "READY?";
-            statusEl.style.color = "#aaa";
-            document.body.classList.remove('finished');
-            if (navigator.vibrate) navigator.vibrate(50);
-        }
-    </script>
+    // 자동으로 배고파짐 (1분마다 -1)
+    setInterval(() => {
+        data.hunger = Math.max(data.hunger - 1, 0);
+        updateUI();
+    }, 60000);
+
+    // 시작 시 불러오기
+    load();
+    updateUI();
+</script>
+
 </body>
 </html>
