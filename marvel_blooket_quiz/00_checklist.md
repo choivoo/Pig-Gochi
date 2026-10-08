@@ -1,0 +1,11 @@
+# 작업 체크리스트
+- [x] STEP 0 폴더/체크리스트
+- [x] STEP 1 (공식문서 403, 부분확인) Blooket CSV 형식 웹 확인 -> 00_format_notes.md
+- [x] STEP 2 (A: typing in CSV) 타이핑 문항 처리 결정
+- [x] STEP 3 설계
+- [x] STEP 4 사실 확인 -> source_notes.md
+- [x] STEP 5 보기/정답 규칙
+- [x] STEP 6 파일 생성
+- [x] STEP 7 자동 검증
+- [x] STEP 8 2차 점검
+- [x] STEP 9 최종 보고
