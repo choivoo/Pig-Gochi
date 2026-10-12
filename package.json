@@ -1,0 +1,12 @@
+{
+  "name": "pig-gochi-eraser-rpg",
+  "version": "1.0.0",
+  "description": "지우개 RPG - 책상 위의 전쟁 (GitHub Pages 정적 호스팅 웹게임)",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node tests/sim.test.mjs",
+    "balance": "node tests/balance.mjs 6 0.85",
+    "serve": "python3 -m http.server 8080"
+  }
+}
