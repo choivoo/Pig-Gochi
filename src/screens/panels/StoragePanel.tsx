@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { PetThumb } from '../../components/common';
+import { Icon, PetThumb } from '../../components/common';
 import { EGGS, LINEAGE_NAME, SPECIES, STAGE_NAME } from '../../data/pets';
 import { useGame } from '../../stores/gameStore';
 import type { EggType } from '../../types';
@@ -34,7 +34,7 @@ export function StoragePanel() {
         })}
       </div>
       <div className="card" style={{ alignItems: 'stretch', textAlign: 'left' }}>
-        <b>새로운 알 키우기</b>
+        <b><Icon name="paw" size="xs" /> 새로운 알 키우기</b>
         {!canNew ? <div className="muted">지금 키우는 펫이 성체가 되면 새로운 알을 받을 수 있어요.</div> : (
           <div className="stack">
             <div className="muted">지금 펫은 정원으로 옮겨져요. 언제든 다시 데려올 수 있어요.</div>

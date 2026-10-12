@@ -87,6 +87,7 @@ function Hud() {
         <b>{pet.name}{pet.special ? ' ✨' : ''}</b>
         <small>{save.playerProfile.name} · {pet.stage === 'egg' ? '알' : `${sp.name} · ${STAGE_NAME[pet.stage]}`} · {TOD_NAME[tod]}·{WEATHER_NAME[w]}</small>
       </div>
+      <button className="btn small icon-only" aria-label={save.settings.muted ? '소리 켜기' : '소리 끄기'} aria-pressed={save.settings.muted} onClick={() => useGame.getState().updateSettings({ muted: !save.settings.muted })}><Icon name={save.settings.muted ? 'mute' : 'sound'} size="sm" /></button>
       <div className="coin-chip" aria-label={`코인 ${save.coins}개`}><Icon name="coin" size="sm" /><span>{save.coins}</span></div>
       <button className="btn small icon-only" aria-label="더보기 메뉴" onClick={() => setPanel('menu')}><Icon name="bag" size="sm" />{unclaimed > 0 && <span className="dot" aria-label="받을 보상" style={{ position: 'relative', width: 10, height: 10, background: 'var(--red)', border: '2px solid var(--ink)', borderRadius: '50%', marginLeft: -6, marginTop: -16 }} />}</button>
     </header>
@@ -265,11 +266,15 @@ export function GameScreen() {
 
 export function MenuLinks() {
   const setPanel = useGame((s) => s.setPanel);
+  const setScreen = useGame((s) => s.setScreen);
   return (
+    <div className="stack">
     <div className="grid">
       {([['medicine', '치료', 'care'], ['mission', '미션', 'missions'], ['trophy', '업적', 'achievements'], ['pets', '보관함', 'storage'], ['star', '꾸며 주기', 'wardrobe'], ['settings', '설정', 'settings']] as const).map(([i, l, p]) => (
         <button key={p} className="btn" onClick={() => setPanel(p)}><Icon name={i} size="sm" />{l}</button>
       ))}
+    </div>
+    <button className="btn" onClick={() => { useGame.getState().flush(); setScreen('title'); }}><Icon name="home" size="sm" />타이틀로 (자동 저장됨)</button>
     </div>
   );
 }

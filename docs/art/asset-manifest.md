@@ -183,11 +183,8 @@
 | assets/minigames/fish_gold.png | 16×12 | 1 | minigame | minigame:fish_gold |
 | assets/minigames/bobber.png | 8×10 | 1 | minigame | minigame:bobber |
 | assets/minigames/card_back.png | 24×24 | 1 | minigame | minigame:card_back |
-| assets/minigames/card_face.png | 24×24 | 1 | minigame | minigame:card_face |
 | assets/minigames/obstacle_rock.png | 16×16 | 1 | minigame | minigame:obstacle_rock |
 | assets/minigames/obstacle_bush.png | 16×24 | 1 | minigame | minigame:obstacle_bush |
-| assets/minigames/maze_wall.png | 16×16 | 1 | minigame | minigame:maze_wall |
-| assets/minigames/maze_floor.png | 16×16 | 1 | minigame | minigame:maze_floor |
 | assets/minigames/flag.png | 16×16 | 1 | minigame | minigame:flag |
 | assets/minigames/note_tile.png | 24×10 | 1 | minigame | minigame:note_tile |
 | assets/minigames/pond.png | 96×40 | 1 | minigame | minigame:pond |

@@ -87,6 +87,7 @@ export function RoomStage(p: StageProps) {
         st.say(['poke_many'], true);
         v.actor.trigger('INTERACTING', 1300);
         v.spawn('question', v.petCenter().x, v.petCenter().y - 10, 2, 20);
+        v.spawn('exclaim', v.petCenter().x + 6, v.petCenter().y - 14, 1, 4);
         if (st.save) { const res = startled(st.save, now()); if (res.ok) st.apply(res, { silent: true }); }
       },
       onStroke: () => {
@@ -114,6 +115,7 @@ export function RoomStage(p: StageProps) {
         case 'special': v.actor.trigger('HAPPY', 1600); v.actor.jump(5); v.spawn('sparkle', c.x, c.y - 8, 5, 30); v.spawn('star', c.x, c.y - 8, 2, 30); break;
         case 'hatch': v.spawn('sparkle', 96, 110, 6, 40); break;
         case 'evolve': v.actor.trigger('EVOLVING', 3000, true); break;
+        case 'coins': v.spawn('coin_fx', c.x, c.y - 8, Math.min(4, 1 + Math.floor(e.amount / 30)), 28); break;
         case 'pet': if (!e.rewarded) v.actor.trigger('HAPPY', 400); break;
         case 'bathe': v.spawn('foam', c.x, c.y, 3, 20); v.spawn('sparkle', c.x, c.y - 6, 3, 24); break;
         default: break;

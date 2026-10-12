@@ -19,6 +19,9 @@ def save(img, rel, w, h, frames=1, use='', kind=''):
     manifest.append(dict(path='assets/' + rel, w=w, h=h, frames=frames, kind=kind, use=use, source='procedural (scripts/assets)', license='original, project-owned (CC0)'))
 
 def main():
+    import shutil
+    if os.path.isdir(OUTD):
+        shutil.rmtree(OUTD)  # no stale sprites survive a regeneration
     anchors = {}
     for n, sp in pets.PETS.items():
         sh, a = pets.pet_sheet(n)

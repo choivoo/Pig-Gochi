@@ -12,6 +12,14 @@ createRoot(document.getElementById('root') as HTMLElement).render(
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`).then((reg) => {
+      // once everything the game needs has been loaded, hand the URL list to the worker so a later offline start works
+      void navigator.serviceWorker.ready.then((r) => {
+        window.setTimeout(() => {
+          const urls = new Set<string>([location.href.split('#')[0]]);
+          for (const e of performance.getEntriesByType('resource')) if (e.name.startsWith(location.origin)) urls.add(e.name);
+          r.active?.postMessage({ type: 'PRECACHE', urls: Array.from(urls) });
+        }, 2500);
+      });
       reg.addEventListener('updatefound', () => {
         const w = reg.installing;
         w?.addEventListener('statechange', () => {

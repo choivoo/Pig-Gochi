@@ -34,12 +34,12 @@ export function ShopPanel() {
       <div className="tabs" role="tablist">
         {CATS.map((c) => <button key={c} role="tab" className="tab" aria-selected={cat === c} onClick={() => { setCat(c); setSel(null); setQty(1); }}>{CATEGORY_NAME[c]}</button>)}
       </div>
-      <div className="grid" role="list" style={{ marginBottom: item ? 110 : 0 }}>
+      <div className="grid" style={{ marginBottom: item ? 110 : 0 }}>
         {items.map((i) => {
           const un = isUnlocked(save, i.unlock);
           const own = ownedCount(i.id, i.category);
           return (
-            <button key={i.id} role="listitem" className={`card ${sel === i.id ? 'selected' : ''} ${!un || i.price === null ? 'locked' : ''}`} style={{ cursor: 'pointer' }} onClick={() => { setSel(i.id); setQty(1); }} aria-label={`${i.name} ${i.price === null ? '보상 전용' : `${i.price} 코인`}`}>
+            <button key={i.id} className={`card ${sel === i.id ? 'selected' : ''} ${!un || i.price === null ? 'locked' : ''}`} style={{ cursor: 'pointer' }} onClick={() => { setSel(i.id); setQty(1); }} aria-label={`${i.name} ${i.price === null ? '보상 전용' : `${i.price} 코인`}`}>
               {own > 0 && <span className="qty">보유 {own}</span>}
               <div className="thumb"><Img src={i.icon} size={i.category === 'room' ? 64 : undefined} /></div>
               <b>{i.name}</b>

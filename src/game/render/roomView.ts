@@ -198,6 +198,8 @@ export class RoomView {
       if (this.actor.state === 'INTERACTING' && Math.random() < dt / 160) this.spawn('heart', this.actor.x, this.actor.y - this.petSize() * 0.75, 1, 18);
       if (s.sleeping && Math.random() < dt / 1400) this.spawn('zzz', this.actor.x + 8, this.actor.y - this.petSize() * 0.7, 1, 4);
       if (s.sick && Math.random() < dt / 1800) this.spawn('sweat', this.actor.x + 10, this.actor.y - this.petSize() * 0.7, 1, 4);
+      if (s.emotion === 'angry' && Math.random() < dt / 2500) this.spawn('anger', this.actor.x + 8, this.actor.y - this.petSize() * 0.8, 1, 4);
+      if (s.emotion === 'sad' && Math.random() < dt / 3500) this.spawn('tear', this.actor.x - 6, this.actor.y - this.petSize() * 0.5, 1, 4);
       if (s.special && Math.random() < dt / 900) this.spawn('sparkle', this.actor.x, this.actor.y - this.petSize() * 0.5, 1, this.petSize());
     }
     this.draw(env);

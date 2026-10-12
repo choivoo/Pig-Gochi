@@ -26,7 +26,7 @@ export function AchievementsPanel({ initial }: { initial: 'ach' | 'missions' }) 
               <div className="bar pbar" style={{ color: '#8fd96b', marginTop: 4 }}><i style={{ width: `${Math.min(100, (m.progress / d.target) * 100)}%` }} /></div>
               <small>{Math.min(m.progress, d.target)} / {d.target}</small>
             </div>
-            <button className="btn small gold" disabled={!done || m.claimed} onClick={() => claim(m.id)}>{m.claimed ? '받음' : done ? '받기' : '진행 중'}</button>
+            <button className="btn small gold" disabled={!done || m.claimed} onClick={() => claim(m.id)}>{m.claimed ? <><Icon name="check" size="xs" />받음</> : done ? '받기' : '진행 중'}</button>
           </div>
         );
       })}

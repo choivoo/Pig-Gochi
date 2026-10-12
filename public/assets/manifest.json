@@ -1792,16 +1792,6 @@
    "license": "original, project-owned (CC0)"
   },
   {
-   "path": "assets/minigames/card_face.png",
-   "w": 24,
-   "h": 24,
-   "frames": 1,
-   "kind": "minigame",
-   "use": "minigame:card_face",
-   "source": "procedural (scripts/assets)",
-   "license": "original, project-owned (CC0)"
-  },
-  {
    "path": "assets/minigames/obstacle_rock.png",
    "w": 16,
    "h": 16,
@@ -1818,26 +1808,6 @@
    "frames": 1,
    "kind": "minigame",
    "use": "minigame:obstacle_bush",
-   "source": "procedural (scripts/assets)",
-   "license": "original, project-owned (CC0)"
-  },
-  {
-   "path": "assets/minigames/maze_wall.png",
-   "w": 16,
-   "h": 16,
-   "frames": 1,
-   "kind": "minigame",
-   "use": "minigame:maze_wall",
-   "source": "procedural (scripts/assets)",
-   "license": "original, project-owned (CC0)"
-  },
-  {
-   "path": "assets/minigames/maze_floor.png",
-   "w": 16,
-   "h": 16,
-   "frames": 1,
-   "kind": "minigame",
-   "use": "minigame:maze_floor",
    "source": "procedural (scripts/assets)",
    "license": "original, project-owned (CC0)"
   },
