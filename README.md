@@ -38,3 +38,7 @@ IndexedDB(`pixel-life`) + localStorage 미러(페이지 종료 시 동기 저장
 - 실제 기기(iOS/Android) 테스트는 못 했고, Chromium 데스크톱 + 모바일 에뮬레이션만 검증했습니다.
 - FPS를 실측하지 않았습니다. 리듬 게임의 오디오 지연 보정 UI는 없습니다(판정은 입력 시각 기준).
 - 이슬·불꽃 계열 등 일부 진화 분기는 자동 테스트로 도달 가능성만 검증했고, 실제 플레이 밸런스는 미조정입니다.
+
+## GitHub Pages 배포
+`.github/workflows/deploy.yml`이 `main` 브랜치에 푸시될 때 린트·테스트·에셋 검사·빌드 후 Pages로 배포합니다.
+저장소 **Settings → Pages → Build and deployment → Source: GitHub Actions**로 한 번 설정해야 합니다(계정 권한이 필요해 자동으로 하지 않았습니다).
