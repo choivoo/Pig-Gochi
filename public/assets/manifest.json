@@ -1,0 +1,1935 @@
+{
+ "version": 1,
+ "assets": [
+  {
+   "path": "assets/pets/mongle.png",
+   "w": 32,
+   "h": 32,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:mongle",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/mongsil.png",
+   "w": 48,
+   "h": 48,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:mongsil",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/gureumi.png",
+   "w": 48,
+   "h": 48,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:gureumi",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/solbyeol.png",
+   "w": 64,
+   "h": 64,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:solbyeol",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/daltsom.png",
+   "w": 64,
+   "h": 64,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:daltsom",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/gureumwang.png",
+   "w": 64,
+   "h": 64,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:gureumwang",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/pokpungmong.png",
+   "w": 64,
+   "h": 64,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:pokpungmong",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/toktok.png",
+   "w": 32,
+   "h": 32,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:toktok",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/bulssi.png",
+   "w": 48,
+   "h": 48,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:bulssi",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/jeongikong.png",
+   "w": 48,
+   "h": 48,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:jeongikong",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/hwayeomtori.png",
+   "w": 64,
+   "h": 64,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:hwayeomtori",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/jaetbitryong.png",
+   "w": 64,
+   "h": 64,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:jaetbitryong",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/beongaetto.png",
+   "w": 64,
+   "h": 64,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:beongaetto",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/neonkaet.png",
+   "w": 64,
+   "h": 64,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:neonkaet",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/mulkong.png",
+   "w": 32,
+   "h": 32,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:mulkong",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/mulbangul.png",
+   "w": 48,
+   "h": 48,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:mulbangul",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/saessak.png",
+   "w": 48,
+   "h": 48,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:saessak",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/paadori.png",
+   "w": 64,
+   "h": 64,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:paadori",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/seoripin.png",
+   "w": 64,
+   "h": 64,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:seoripin",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/supyojeong.png",
+   "w": 64,
+   "h": 64,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:supyojeong",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/gasitori.png",
+   "w": 64,
+   "h": 64,
+   "frames": 8,
+   "kind": "pet-sheet",
+   "use": "pet:gasitori",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/egg_starlight.png",
+   "w": 32,
+   "h": 32,
+   "frames": 5,
+   "kind": "egg-sheet",
+   "use": "egg:starlight",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/egg_flame.png",
+   "w": 32,
+   "h": 32,
+   "frames": 5,
+   "kind": "egg-sheet",
+   "use": "egg:flame",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/pets/egg_dew.png",
+   "w": 32,
+   "h": 32,
+   "frames": 5,
+   "kind": "egg-sheet",
+   "use": "egg:dew",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/rooms/cozy.png",
+   "w": 192,
+   "h": 160,
+   "frames": 1,
+   "kind": "room",
+   "use": "room:cozy",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/rooms/starry.png",
+   "w": 192,
+   "h": 160,
+   "frames": 1,
+   "kind": "room",
+   "use": "room:starry",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/rooms/forest.png",
+   "w": 192,
+   "h": 160,
+   "frames": 1,
+   "kind": "room",
+   "use": "room:forest",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/rooms/ocean.png",
+   "w": 192,
+   "h": 160,
+   "frames": 1,
+   "kind": "room",
+   "use": "room:ocean",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/rooms/cloud.png",
+   "w": 192,
+   "h": 160,
+   "frames": 1,
+   "kind": "room",
+   "use": "room:cloud",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/rooms/neon.png",
+   "w": 192,
+   "h": 160,
+   "frames": 1,
+   "kind": "room",
+   "use": "room:neon",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/bed_basic.png",
+   "w": 48,
+   "h": 32,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:bed_basic",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/bed_star.png",
+   "w": 48,
+   "h": 32,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:bed_star",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/bed_wood.png",
+   "w": 48,
+   "h": 32,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:bed_wood",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/sofa_small.png",
+   "w": 48,
+   "h": 32,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:sofa_small",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/cushion.png",
+   "w": 16,
+   "h": 14,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:cushion",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/desk.png",
+   "w": 40,
+   "h": 32,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:desk",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/chair.png",
+   "w": 20,
+   "h": 30,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:chair",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/dining_table.png",
+   "w": 44,
+   "h": 32,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:dining_table",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/fridge.png",
+   "w": 24,
+   "h": 44,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:fridge",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/bookshelf.png",
+   "w": 32,
+   "h": 52,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:bookshelf",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/toybox.png",
+   "w": 28,
+   "h": 22,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:toybox",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/rug_round.png",
+   "w": 56,
+   "h": 18,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:rug_round",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/rug_star.png",
+   "w": 56,
+   "h": 18,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:rug_star",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/plant_pot.png",
+   "w": 18,
+   "h": 28,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:plant_pot",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/cactus.png",
+   "w": 18,
+   "h": 28,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:cactus",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/small_tree.png",
+   "w": 36,
+   "h": 60,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:small_tree",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/stand_lamp.png",
+   "w": 18,
+   "h": 52,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:stand_lamp",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/moon_lamp.png",
+   "w": 20,
+   "h": 22,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:moon_lamp",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/star_lamp.png",
+   "w": 20,
+   "h": 22,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:star_lamp",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/toy_train.png",
+   "w": 36,
+   "h": 18,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:toy_train",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/blocks.png",
+   "w": 28,
+   "h": 20,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:blocks",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/plush.png",
+   "w": 22,
+   "h": 24,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:plush",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/aquarium.png",
+   "w": 44,
+   "h": 36,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:aquarium",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/whiteboard.png",
+   "w": 44,
+   "h": 52,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:whiteboard",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/game_console.png",
+   "w": 28,
+   "h": 40,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:game_console",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/trophy.png",
+   "w": 20,
+   "h": 28,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:trophy",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/bean_bag.png",
+   "w": 32,
+   "h": 24,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:bean_bag",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/piano.png",
+   "w": 44,
+   "h": 40,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:piano",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/cardboard_house.png",
+   "w": 40,
+   "h": 36,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:cardboard_house",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/wall_clock.png",
+   "w": 20,
+   "h": 20,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:wall_clock",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/poster_star.png",
+   "w": 22,
+   "h": 30,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:poster_star",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/poster_forest.png",
+   "w": 22,
+   "h": 30,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:poster_forest",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/frame_gold.png",
+   "w": 28,
+   "h": 24,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:frame_gold",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/mirror.png",
+   "w": 22,
+   "h": 36,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:mirror",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/curtain.png",
+   "w": 18,
+   "h": 46,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:curtain",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/garland.png",
+   "w": 48,
+   "h": 14,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:garland",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/furniture/wall_shelf.png",
+   "w": 36,
+   "h": 18,
+   "frames": 1,
+   "kind": "furniture",
+   "use": "furniture:wall_shelf",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/ribbon_red.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:ribbon_red",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/ribbon_blue.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:ribbon_blue",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/crown_small.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:crown_small",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/pin_star.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:pin_star",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/glasses.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:glasses",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/sunglasses.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:sunglasses",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/hat_wizard.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:hat_wizard",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/beret.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:beret",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/hat_santa.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:hat_santa",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/cat_ears.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:cat_ears",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/butterfly.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:butterfly",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/flower_deco.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:flower_deco",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/bag_small.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:bag_small",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/scarf.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:scarf",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/pin_heart.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:pin_heart",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/pin_moon.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:pin_moon",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/hat_cloud.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:hat_cloud",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/hat_explorer.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:hat_explorer",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/necklace_gem.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:necklace_gem",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/accessories/halo.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "accessory",
+   "use": "accessory:halo",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/kibble.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:kibble",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/apple.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:apple",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/strawberry.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:strawberry",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/banana.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:banana",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/carrot.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:carrot",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/onigiri.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:onigiri",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/bread.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:bread",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/egg.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:egg",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/milk.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:milk",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/juice.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:juice",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/cookie.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:cookie",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/pudding.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:pudding",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/cake.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:cake",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/donut.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:donut",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/jelly.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:jelly",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/icecream.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:icecream",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/pancake.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:pancake",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/sandwich.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:sandwich",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/fish.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:fish",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/soup.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:soup",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/starcandy.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:starcandy",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/firejelly.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:firejelly",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/dewberry.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:dewberry",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/mooncookie.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:mooncookie",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/food/rainbowpudding.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "food",
+   "use": "food:rainbowpudding",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_feed.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:feed",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_bath.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:bath",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_play.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:play",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_sleep.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:sleep",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_shop.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:shop",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_decorate.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:decorate",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_book.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:book",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_stats.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:stats",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_coin.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:coin",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_heart.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:heart",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_medicine.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:medicine",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_settings.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:settings",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_star.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:star",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_trophy.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:trophy",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_home.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:home",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_close.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:close",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_back.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:back",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_bag.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:bag",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_sound.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:sound",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_mute.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:mute",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_clock.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:clock",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_check.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:check",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_lock.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:lock",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_paw.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:paw",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_game.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:game",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_mission.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:mission",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_save.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:save",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_hunger.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:hunger",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_energy.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:energy",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_clean.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:clean",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_health.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:health",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_stress.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:stress",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_bond.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:bond",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_pets.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:pets",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_care.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:care",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_profile_star.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:profile_star",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_profile_flame.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:profile_flame",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_profile_leaf.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:profile_leaf",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_profile_moon.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:profile_moon",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_profile_cloud.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:profile_cloud",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/icon_profile_drop.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "icon",
+   "use": "icon:profile_drop",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/heart.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:heart",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/star.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:star",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/zzz.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:zzz",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/sweat.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:sweat",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/music.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:music",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/sparkle.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:sparkle",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/bubble.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:bubble",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/flame.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:flame",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/drop.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:drop",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/note.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:note",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/anger.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:anger",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/question.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:question",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/exclaim.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:exclaim",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/coin_fx.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:coin_fx",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/dust.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:dust",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/tear.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:tear",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/effects/foam.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "effect",
+   "use": "effect:foam",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/star.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:star",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/star_gold.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:star_gold",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/rock.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:rock",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/basket.png",
+   "w": 28,
+   "h": 20,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:basket",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/fish_small.png",
+   "w": 16,
+   "h": 12,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:fish_small",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/fish_mid.png",
+   "w": 16,
+   "h": 12,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:fish_mid",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/fish_gold.png",
+   "w": 16,
+   "h": 12,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:fish_gold",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/bobber.png",
+   "w": 8,
+   "h": 10,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:bobber",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/card_back.png",
+   "w": 24,
+   "h": 24,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:card_back",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/obstacle_rock.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:obstacle_rock",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/obstacle_bush.png",
+   "w": 16,
+   "h": 24,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:obstacle_bush",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/flag.png",
+   "w": 16,
+   "h": 16,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:flag",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/note_tile.png",
+   "w": 24,
+   "h": 10,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:note_tile",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/minigames/pond.png",
+   "w": 96,
+   "h": 40,
+   "frames": 1,
+   "kind": "minigame",
+   "use": "minigame:pond",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/logo.png",
+   "w": 104,
+   "h": 56,
+   "frames": 1,
+   "kind": "logo",
+   "use": "title logo",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/title_bg.png",
+   "w": 192,
+   "h": 160,
+   "frames": 1,
+   "kind": "background",
+   "use": "title background",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/cloud0.png",
+   "w": 40,
+   "h": 18,
+   "frames": 1,
+   "kind": "effect",
+   "use": "title/window clouds",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/cloud1.png",
+   "w": 40,
+   "h": 18,
+   "frames": 1,
+   "kind": "effect",
+   "use": "title/window clouds",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "assets/ui/cloud2.png",
+   "w": 40,
+   "h": 18,
+   "frames": 1,
+   "kind": "effect",
+   "use": "title/window clouds",
+   "source": "procedural (scripts/assets)",
+   "license": "original, project-owned (CC0)"
+  },
+  {
+   "path": "icons/icon-192.png",
+   "w": 192,
+   "h": 192,
+   "frames": 1,
+   "kind": "pwa",
+   "use": "manifest.json",
+   "source": "procedural",
+   "license": "original"
+  },
+  {
+   "path": "icons/icon-512.png",
+   "w": 512,
+   "h": 512,
+   "frames": 1,
+   "kind": "pwa",
+   "use": "manifest.json",
+   "source": "procedural",
+   "license": "original"
+  },
+  {
+   "path": "icons/icon-maskable-512.png",
+   "w": 512,
+   "h": 512,
+   "frames": 1,
+   "kind": "pwa",
+   "use": "manifest.json",
+   "source": "procedural",
+   "license": "original"
+  },
+  {
+   "path": "favicon.png",
+   "w": 32,
+   "h": 32,
+   "frames": 1,
+   "kind": "pwa",
+   "use": "index.html",
+   "source": "procedural",
+   "license": "original"
+  }
+ ]
+}

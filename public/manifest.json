@@ -1,0 +1,17 @@
+{
+  "name": "PIXEL LIFE: 작은 생명의 세계",
+  "short_name": "PIXEL LIFE",
+  "description": "도트 다마고치 육성 시뮬레이션",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fff3da",
+  "theme_color": "#ffc9d6",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
