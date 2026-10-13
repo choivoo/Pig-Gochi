@@ -25,12 +25,12 @@ self.addEventListener('fetch', (event) => {
   if (req.mode === 'navigate') {
     event.respondWith(
       fetch(req).then((res) => { const copy = res.clone(); caches.open(VERSION).then((c) => c.put('./index.html', copy)); return res; })
-        .catch(() => caches.match('./index.html').then((r) => r || caches.match('./'))),
+        .catch(() => caches.match('./index.html', { ignoreVary: true }).then((r) => r || caches.match('./'))),
     );
     return;
   }
   event.respondWith(
-    caches.match(req).then((hit) => {
+    caches.match(req, { ignoreVary: true }).then((hit) => {
       const net = fetch(req).then((res) => {
         if (res && res.status === 200) { const copy = res.clone(); caches.open(VERSION).then((c) => c.put(req, copy)); }
         return res;
